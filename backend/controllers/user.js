@@ -6,7 +6,7 @@ const User = require('../models/User');
 //installation de npm install --save jsonwebtoken ( permet d'obtenir un token generé aleatoirement)
 const jwt = require('jsonwebtoken');
 
-//logque de signup utilisant une fonction de hachage bcrypt dans le mdp qui va saler le mdp 10. Plus la valeur ( ici 10) sera elevée
+//logique de signup utilisant une fonction de hachage bcrypt dans le mdp qui va saler le mdp 10 fois. Plus la valeur ( ici 10) sera elevée
 //plus le hachage sera securisé. attention une trop grosse valeur alongera le temps d'execution de la fonction.
 //la fonction renvoie une promise dans laquelle le hash sera genere
 //hash permet de sauvegarder le mdp dans la base de données de manière securisée

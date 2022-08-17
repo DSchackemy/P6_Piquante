@@ -19,6 +19,8 @@ router.get('/', auth, sauceCtrl.getAllSauce );
 router.put('/:id',auth, multer, sauceCtrl.modifySauce);
 //route pour la method DELETE
 router.delete('/:id', auth, sauceCtrl.deleteSauce);
+//route pour like en method POST
+router.post('/:id/like', auth, sauceCtrl.like);
 
 //***fin du CRUD ***/
 

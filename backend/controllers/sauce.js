@@ -79,7 +79,7 @@ exports.deleteSauce = (req, res, next) => {
 };
 
 exports.like = (req, res, next) => {
-    // Pour la route READ = Ajout/suppression d'un like / dislike à une sauce
+    // Ajout/suppression d'un like / dislike à une sauce
     // Like présent dans le body
     const like = req.body.like
     // On prend le userID
